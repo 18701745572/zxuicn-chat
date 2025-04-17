@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: 使用 Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'yarn'
+    - name: 安装依赖
+      run: yarn install --frozen-lockfile
+    - name: 运行 lint
+      run: yarn lint
+    - name: 运行测试
+      run: yarn test
+    - name: 构建
+      run: yarn build
+
+  # 添加一个供自动部署文档的任务
+  deploy-docs:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: 使用 Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          cache: 'yarn'
+      - name: 安装依赖
+        run: yarn install --frozen-lockfile
+      - name: 构建文档
+        run: yarn build-docs # 请替换为实际的文档构建命令
+      # 这里可以添加将文档部署到 GitHub Pages 的步骤 
