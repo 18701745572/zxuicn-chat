@@ -1,7 +1,12 @@
+<h1 align="center">
+  <a href="https://zxui.cn/">
+    <img width="109" height="28" src="https://gw.alicdn.com/tfs/TB1uYH4QoY1gK0jSZFMXXaWcVXa-218-56.svg" alt="zxuicn">
+  </a>
+</h1>
+
+<p align="center">服务于对话领域的设计和开发体系</p>
 
 <p align="center">The UI design language and React library for Conversational UI</p>
-
-<p align="center">Website：<a href="https://zxuicn.io/" target="_blank">https://zxuicn.io</a></p>
 
 <div align="center">
 
@@ -12,10 +17,6 @@
 [![Jsdelivr Hits](https://img.shields.io/jsdelivr/npm/hm/zxuicn-chat?style=flat-square)](https://cdn.jsdelivr.net/npm/zxuicn-chat)
 
 </div>
-
-<p align="center">
-  <img width="750" src="https://gw.alicdn.com/tfs/TB1WTl.lQ9l0K4jSZFKXXXFjpXa-1500-833.jpg">
-</p>
 
 English | [简体中文](./README.zh-CN.md)
 

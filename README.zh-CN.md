@@ -6,7 +6,6 @@
 
 <p align="center">服务于对话领域的设计和开发体系</p>
 
-<p align="center">官网：<a href="https://zxuicn.io/" target="_blank">https://zxuicn.io</a></p>
 
 <div align="center">
 
@@ -17,10 +16,6 @@
 [![Jsdelivr Hits](https://img.shields.io/jsdelivr/npm/hm/zxuicn-chat?style=flat-square)](https://cdn.jsdelivr.net/npm/zxuicn-chat)
 
 </div>
-
-<p align="center">
-  <img width="750" src="https://gw.alicdn.com/tfs/TB1WTl.lQ9l0K4jSZFKXXXFjpXa-1500-833.jpg">
-</p>
 
 [English](./README.md) | 简体中文
 
