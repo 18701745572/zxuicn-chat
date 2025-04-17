@@ -1,8 +1,3 @@
-<h1 align="center">
-  <a href="https://zxuicn.io/">
-    <img width="109" height="28" src="https://gw.alicdn.com/tfs/TB1uYH4QoY1gK0jSZFMXXaWcVXa-218-56.svg" alt="zxuicn">
-  </a>
-</h1>
 
 <p align="center">The UI design language and React library for Conversational UI</p>
 
